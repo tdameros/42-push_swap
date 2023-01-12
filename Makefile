@@ -22,7 +22,7 @@ LIST_SRC		=	main.c \
 LIST_CHECKER_SRC =	checker.c \
 					stack.c \
 					stack_instruction.c \
-					parsing.c \
+					parser.c \
 					merge_sort.c \
 					utils.c
 
