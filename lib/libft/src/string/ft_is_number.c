@@ -6,7 +6,7 @@
 /*   By: tdameros <tdameros@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 23:07:14 by tdameros          #+#    #+#             */
-/*   Updated: 2023/01/11 23:07:19 by tdameros         ###   ########lyon.fr   */
+/*   Updated: 2023/01/12 16:49:36 by tdameros         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,17 @@
 
 int	ft_is_number(char *s)
 {
+	int	is_number;
+
+	is_number = 0;
 	if (*s == '-')
 		s++;
 	while (*s != '\0')
 	{
 		if (!ft_isdigit(*s))
 			return (0);
+		is_number = 1;
 		s++;
 	}
-	return (1);
+	return (is_number);
 }

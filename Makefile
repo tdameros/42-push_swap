@@ -15,7 +15,7 @@ LIST_SRC		=	main.c \
 					push.c \
 					optimization.c \
 					simplification.c \
-					parsing.c \
+					parser.c \
 					print.c \
 					utils.c
 

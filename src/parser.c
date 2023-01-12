@@ -6,7 +6,7 @@
 /*   By: tdameros <tdameros@student.42lyon.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/10 12:19:23 by tdameros          #+#    #+#             */
-/*   Updated: 2023/01/10 12:19:24 by tdameros         ###   ########lyon.fr   */
+/*   Updated: 2023/01/12 16:52:11 by tdameros         ###   ########lyon.fr   */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,8 @@ t_stack	*create_stack_with_params(char **params, int len)
 	stack = NULL;
 	while (index < len)
 	{
-		if (parse_param(params[index], &stack) < 0)
+		if (ft_strlen(params[index]) == 0
+			|| parse_param(params[index], &stack) < 0)
 			free_stack_exit(&stack, EXIT_FAILURE);
 		index++;
 	}
