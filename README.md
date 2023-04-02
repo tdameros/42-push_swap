@@ -67,7 +67,9 @@ The goal of this project is to sort the stack using as few instructions as possi
 3. Use quicksort on all 3 parts. Recursively the smaller half is sent to the B stack and then the larger half is sent to the A stack
 4. Optimize the instructions, for example if the instructions RA and RB follow each other, then we replace by RR
 
+## Examples
 Visualizer for debugging : [https://github.com/o-reo/push_swap_visualizer](https://github.com/o-reo/push_swap_visualizer)
+
 Tester : [https://github.com/SimonCROS/push_swap_tester](https://github.com/SimonCROS/push_swap_tester)
 
 ![](examples/visualizer.gif)
