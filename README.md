@@ -1,6 +1,6 @@
 # Push_Swap Project
 
-This is the Push_swap project for the 42 school. The goal of this project is to create a program that sorts a stack of integers using two stacks and a limited set of instructions.
+The goal of this project is to create a program that sorts a stack of integers using two stacks and a limited set of instructions.
 
 ## Installation
 
@@ -60,12 +60,12 @@ The following instructions are available:
 
 ## Strategy
 
-The goal of this project is to sort the stack using as few instructions as possible. To do this, you need to come up with a strategy that takes advantage of the limited set of instructions.
+The goal is to sort the stack using as few instructions as possible. To do this, you need to come up with a strategy that takes advantage of the limited set of instructions.
 
 1. Pre-sort numbers in order to index them
 2. Divide into 3 parts, the largest tier stays on stack A, the smallest tier is at the bottom of stack B and the middle tier is on top of stack B
 3. Use quicksort on all 3 parts. Recursively the smaller half is sent to the B stack and then the larger half is sent to the A stack
-4. Optimize the instructions, for example if the instructions RA and RB follow each other, then we replace by RR
+4. Optimize the instructions, for example if the instructions RA and RB follow each other, then replace by RR
 
 ## Examples
 Visualizer for debugging : [https://github.com/o-reo/push_swap_visualizer](https://github.com/o-reo/push_swap_visualizer)
