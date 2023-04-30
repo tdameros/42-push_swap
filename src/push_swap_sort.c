@@ -68,11 +68,9 @@ static void	thirds_sort(t_push_swap *push_swap, int size)
 {
 	int	two_thirds;
 	int	count;
-	int	rotate;
 
 	two_thirds = (size / 3) * 2;
 	count = 0;
-	rotate = 0;
 	while (count < two_thirds)
 	{
 		swap_if_near(push_swap);
@@ -84,9 +82,6 @@ static void	thirds_sort(t_push_swap *push_swap, int size)
 				multiple_rotate_instruction(push_swap, STACK_B, 1);
 		}
 		else
-		{
 			multiple_rotate_instruction(push_swap, STACK_A, 1);
-			rotate++;
-		}
 	}
 }
